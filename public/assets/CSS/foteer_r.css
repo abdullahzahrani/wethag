@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+/* font family for all text*/
+* {
+    font-family: 'Lateef', serif;
+}
+/* fotter */
+ .wave{
+	top: 0;
+	right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(0deg);
+ }
+ .wave .shape-fill{
+ 	fill: #fff;
+ }
+
+.footer-distributed{
+	box-shadow: 0 1px 1px 0 rgba(255, 242, 242, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+    overflow: hidden;
+	color: #fff;
+	background: linear-gradient(180deg, rgba(44,144,196,1) 0%, rgba(49,204,176,1) 100%);
+	background-image: url("./Footer.png");
+	bottom:0;
+	left: 0;
+	right: 0;
+    z-index: 0;
+
+}
+
+/* Footer right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-div {
+	padding: 50px 60px 50px;
+}
+
+.footer-distributed h3{
+
+	color: #195B71;
+	font: normal 50px 'Roboto', cursive;
+    margin: 0 0 10px;
+    text-align: right;
+
+}
+
+.footer-distributed h4{
+
+	color:  #ffffff;
+	font: normal 25px 'Roboto', cursive;
+    margin: 0 0 10px;
+    text-align: right;
+
+}
+.footer-distributed h5{
+	color:  #ffffff;
+	font: normal 22px 'Roboto', cursive;
+    margin: 0 0 10px;
+    text-align: right;
+
+}
+.sociallinks :hover{
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+
+}
+.sociallinks{
+    text-align: right;
+}
+.footer-right p{
+    text-align: right;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+.footer-distributed .footer-left p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+    color: #ffffff;
+
+
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #195B71;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+	font: inherit;
+	font-size: 22px;
+	font-weight: normal;
+	width: 400px;
+    padding: 18px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #ffff;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:   rgb(161, 159, 159);
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  rgb(161, 159, 159);
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+    margin-bottom: 20px;
+
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #195B71;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*  footer to be responsive*/
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 20px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-div{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
